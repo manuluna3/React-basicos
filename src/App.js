@@ -1,5 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Componente from "./components/componente";
+import Propiedades from "./components/Propiedades";
 
 function App() {
   return (
@@ -9,9 +11,30 @@ function App() {
         <p>
           Editars <code>src/App.js</code> and save to reload.
         </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Learn React
         </a>
+        <section>
+          <Componente />
+          <hr></hr>
+          <Propiedades
+            cadena="Esto es una cadena de texto"
+            numero={10}
+            booleano={true}
+            arreglo={[1, 2, 3]}
+            objeto={{ nombre: "Manu", elPeluca: "sabeee" }}
+            funcion={(num) => num * num}
+            elementoReact={<i>Esto es un elemento react</i>}
+            componenteReact={
+              <Componente msg="Soy un componente pasado como una prop" />
+            }
+          />
+        </section>
       </header>
     </div>
   );
