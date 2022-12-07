@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+// import React, { Component } from "react";
 
 // const Componente = () => <h2>Hola soy un mensaje desde arrow function</h2>;
 

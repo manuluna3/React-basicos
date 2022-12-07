@@ -1,7 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
+import logo from "./logo.svg";
 import Componente from "./components/componente";
-import Propiedades from "./components/Propiedades";
+import Propiedades from "./components/propiedades";
+import Estado from "./components/estado";
+import RenderizadoCondicional from "./components/renderizadoCondicional";
+import RenderizadoElementos from "./components/renderizadoElementos";
 
 function App() {
   return (
@@ -34,6 +37,12 @@ function App() {
               <Componente msg="Soy un componente pasado como una prop" />
             }
           />
+          <hr />
+          <Estado />
+          <hr />
+          <RenderizadoCondicional />
+          <RenderizadoElementos />
+          <hr />
         </section>
       </header>
     </div>
