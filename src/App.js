@@ -5,7 +5,7 @@ import Propiedades from "./components/propiedades";
 import Estado from "./components/estado";
 import RenderizadoCondicional from "./components/renderizadoCondicional";
 import RenderizadoElementos from "./components/renderizadoElementos";
-import Eventos from "./components/eventos";
+import { EventosES6, EventosES7 } from "./components/eventos";
 
 function App() {
   return (
@@ -45,7 +45,9 @@ function App() {
           <hr />
           <RenderizadoElementos />
           <hr />
-          <Eventos />
+          <EventosES6 />
+          <hr />
+          <EventosES7 />
         </section>
       </header>
     </div>
