@@ -12,14 +12,14 @@ export class EventosES6 extends Component {
   }
 
   sumar() {
-    console.log("Sumando");
+    // console.log("Sumando");
     this.setState({
       contador: this.state.contador + 1,
     });
   }
 
   restar() {
-    console.log("Restando");
+    // console.log("Restando");
     this.setState({
       contador: this.state.contador - 1,
     });
@@ -47,14 +47,14 @@ export class EventosES7 extends Component {
 
   //Arrow functions
   sumar = (e) => {
-    console.log("Sumando");
+    // console.log("Sumando");
     this.setState({
       contador: this.state.contador + 1,
     });
   };
 
   restar = () => {
-    console.log("Restando");
+    // console.log("Restando");
     this.setState({
       contador: this.state.contador - 1,
     });
@@ -69,6 +69,31 @@ export class EventosES7 extends Component {
           <button onClick={this.restar}>-</button>
         </nav>
         <h3>{this.state.contador}</h3>
+      </div>
+    );
+  }
+}
+
+export class MasSobreEventos extends Component {
+  handleClick = (e, mensaje) => {
+    console.log(e);
+    console.log(e.nativeEvent);
+    console.log(e.target);
+    console.log(e.nativeEvent.target);
+    console.log(mensaje);
+  };
+
+  render() {
+    return (
+      <div>
+        <h2>Más Sobre Eventos</h2>
+        <button
+          onClick={(e) =>
+            this.handleClick(e, "Hola pasando parámetro desde un evento")
+          }
+        >
+          Saludar
+        </button>
       </div>
     );
   }
