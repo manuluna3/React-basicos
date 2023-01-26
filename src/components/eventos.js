@@ -76,11 +76,11 @@ export class EventosES7 extends Component {
 
 export class MasSobreEventos extends Component {
   handleClick = (e, mensaje) => {
-    console.log(e);
-    console.log(e.nativeEvent);
-    console.log(e.target);
-    console.log(e.nativeEvent.target);
-    console.log(mensaje);
+    // console.log(e);
+    // console.log(e.nativeEvent);
+    // console.log(e.target);
+    // console.log(e.nativeEvent.target);
+    // console.log(mensaje);
   };
 
   render() {

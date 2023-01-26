@@ -8,6 +8,7 @@ import RenderizadoElementos from "./components/renderizadoElementos";
 import { EventosES6, EventosES7, MasSobreEventos } from "./components/eventos";
 import Ciclovida from "./components/cicloVida";
 import AjaxApis from "./components/AjaxApis";
+import ContadorHooks from "./components/contadorHooks";
 
 function App() {
   return (
@@ -56,6 +57,9 @@ function App() {
           <Ciclovida />
           <hr />
           <AjaxApis />
+          <hr />
+          <ContadorHooks />
+          <hr />
         </section>
       </header>
     </div>
